@@ -1,14 +1,18 @@
+import Dashboard from "./components/Dashboard";
 import Sidebar from "./components/Sidebar";
 
 
 import './index.css'
-
+// 742 width max
 function App() {
     
     
     return (
-        <div className='h-full bg-base-200' data-theme=''>
-           <Sidebar/>     
+        <div className='h-full bg-base-200 h-full' data-theme=''>
+            <div className="flex gap-2 h-full w-full flex-row">
+           <Sidebar/>    
+           <Dashboard/> 
+            </div>
         </div>
     );
 

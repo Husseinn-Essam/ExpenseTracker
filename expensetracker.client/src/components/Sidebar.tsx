@@ -9,7 +9,7 @@ export default function Sidebar() {
     };
   
   return (
-    <div className=' rounded-2xl h-3/4 ml-5 mt-5 flex content-center flex-col w-60 gap-1  bg-base-100 shadow-2xl'>
+    <div className=' rounded-2xl h-3/4 ml-5 mt-5 flex content-center flex-col w-72 gap-1  bg-base-100 shadow-2xl'>
           <div className="avatar flex flex-row gap-2 mt-5 ml-5 rounded-2xl">
             <div className="flex flex-row w-12 h-12 rounded-2xl">
                 <img src="https://th.bing.com/th/id/R.05208c284fe4c902f5be6b8dde947b5f?rik=q01m42bpKHRVfA&pid=ImgRaw&r=0" />
