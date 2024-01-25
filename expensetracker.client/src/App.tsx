@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
 
@@ -8,8 +7,7 @@ function App() {
     
     
     return (
-        <div className='h-full' data-theme=''>
-           {/* <Navbar/> */}
+        <div className='h-full bg-base-200' data-theme=''>
            <Sidebar/>     
         </div>
     );
