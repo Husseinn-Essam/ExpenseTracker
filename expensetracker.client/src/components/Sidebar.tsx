@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { PresentationChartBarIcon, BanknotesIcon,CurrencyDollarIcon,CreditCardIcon } from '@heroicons/react/20/solid';
+import { PresentationChartBarIcon, BanknotesIcon,CurrencyDollarIcon,CreditCardIcon, XMarkIcon } from '@heroicons/react/20/solid';
 import ThemeButton from './ThemeButton';
 export default function Sidebar() {
     const [selectedButton, setSelectedButton] = useState<string>('dashboard');
+
+
 
     const handleButtonClick = (button: string) => {
       setSelectedButton(button);
@@ -18,6 +20,9 @@ export default function Sidebar() {
                             <p className="font-bold text-blue-500 font-bold">Hello, User!</p>
                             <p>Financial app</p>
                     </div>      
+                    <label htmlFor="my-drawer-3" aria-label="close sidebar" className="md:hidden btn btn-square btn-ghost ml-10">
+                          <XMarkIcon className='w-8 h-8'/>
+                    </label>
             </div>
                
                      
