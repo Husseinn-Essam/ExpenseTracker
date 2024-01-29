@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { PresentationChartBarIcon, BanknotesIcon,CurrencyDollarIcon,CreditCardIcon, XMarkIcon } from '@heroicons/react/20/solid';
 import ThemeButton from './ThemeButton';
 export default function Sidebar() {
@@ -17,7 +17,7 @@ export default function Sidebar() {
                 <img src="https://th.bing.com/th/id/R.05208c284fe4c902f5be6b8dde947b5f?rik=q01m42bpKHRVfA&pid=ImgRaw&r=0" />
             </div>
                     <div className="text-gray-500 flex flex-col">
-                            <p className="font-bold text-blue-500 font-bold">Hello, User!</p>
+                            <p className="font-bold text-blue-500 ">Hello, User!</p>
                             <p>Financial app</p>
                     </div>      
                     <label htmlFor="my-drawer-3" aria-label="close sidebar" className="md:hidden btn btn-square btn-ghost ml-10">

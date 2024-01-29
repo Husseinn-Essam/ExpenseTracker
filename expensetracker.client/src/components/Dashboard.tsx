@@ -1,5 +1,5 @@
-import { Chart ,defaults  } from "chart.js/auto";
-import { Bar, Doughnut, Line } from "react-chartjs-2";
+import { Chart   } from "chart.js/auto";
+import {  Doughnut, Line } from "react-chartjs-2";
 import revenueData from "../../data/revenueData.json";
 import sourceData from "../../data/sourceData.json";
 import {CategoryScale} from 'chart.js'; 
@@ -71,39 +71,40 @@ export default function Dashboard() {
         />
       </div>
 
-      <div className="bg-base-100 rounded-md md:col-span-2 lg:col-span-2 row-start-2  ">
-        <Line
-          data={{
-            labels: revenueData.map((data) => data.label),
-            datasets: [
-              {
-                label: "Income",
-                data: revenueData.map((data) => data.revenue),
-                backgroundColor: "#064FF0",
-                borderColor: "#064FF0",
-              },
-              {
-                label: "Expense",
-                data: revenueData.map((data) => data.cost),
-                backgroundColor: "#FF3030",
-                borderColor: "#FF3030",
-              },
-            ],
-          }}
-          options={{
-            elements: {
-              line: {
-                tension: 0.5,
-              },
-            },
-            plugins: {
-              title: {
-                text: "Monthly Revenue & Cost",
-              },
-            },
-          }}
-        />
-      </div>
+      <div className="bg-base-100 rounded-md md:col-span-2 lg:col-span-2 row-start-2">
+  <Line
+    data={{
+      labels: revenueData.map((data) => data.label),
+      datasets: [
+        {
+          label: "Income",
+          data: revenueData.map((data) => data.revenue),
+          backgroundColor: "rgba(75, 192, 192, 0.2)", 
+          borderColor: "rgba(75, 192, 192, 1)", 
+        },
+        {
+          label: "Expense",
+          data: revenueData.map((data) => data.cost),
+          backgroundColor: "rgba(255, 99, 132, 0.2)", 
+          borderColor: "rgba(255, 99, 132, 1)", 
+        },
+      ],
+    }}
+    options={{
+      elements: {
+        line: {
+          tension: 0.5,
+        },
+      },
+      plugins: {
+        title: {
+          text: "Monthly Revenue & Cost",
+        },
+      },
+    }}
+  />
+</div>
+
     </div>
   );
 }
