@@ -19,11 +19,9 @@ export default function ResponsiveNavbar() {
         onChange={toggleSidebar}
       />
       <div className="drawer-content flex flex-col">
-        {/* Navbar */}
         <div className="w-full flex flex-row-reverse">
         
           <div className="flex-none lg:hidden">
-            {/* Conditionally render menu or close button based on sidebar visibility */}
             
             {sidebarVisible ? (
                 <>

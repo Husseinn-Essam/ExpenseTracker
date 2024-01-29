@@ -1,4 +1,3 @@
-import { log } from "console";
 import { useState,useEffect } from "react";
 import { themeChange } from "theme-change";
 
@@ -9,7 +8,6 @@ export default function ThemeButton() {
     themeChange(false);
   }, [currTheme]);
 
-  console.log(currTheme);
   return (
     <>
         
